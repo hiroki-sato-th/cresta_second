@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+// 共通
+body{
+    font-family: 'Meiryo';
+    line-height: 1.46;
+    background: rgba(244,249,255,1);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.wrapper-big {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.wrapper-small {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+//header
+.page-header{
+    //block要素自体(ここではheader要素)を中央寄せにする
+    padding:0 10px;
+    margin-bottom:15px;
+    margin-top:60px;
+    
+    h1{
+        display:inline-block;
+        width:120px;
+        height:30px;
+    }
+}
+
+.mainvisual{
+    //block要素の中身のインライン要素(img要素)を中央寄せにする
+    text-align: center;
+    padding:0 10px;
+}
+
+
+.index{
+    background: rgba(255,255,255,1);
+    margin-top:60px;
+    .index-contents{
+        width:600px;
+        background: beige;
+        margin: 0 auto;
+        
+        h2{
+            font-size:18px;
+            display: inline-block;
+            margin-top:30px;
+            margin-bottom:20px;
+        }
+        p{
+            font-size:14px;
+            line-height:1.36;
+            margin-bottom:20px;
+        }
+    }
+}
+
+.detail{
+    margin-bottom:30px;
+     
+    h2{
+        font-size:18px;
+        display: inline-block;
+        margin-top:30px;
+        margin-bottom:20px;
+    }
+
+    .detail-contents{
+        display:flex;
+        border-bottom:1px solid rgba(112,112,112,1) ;   
+        // background-color:antiquewhite;
+
+        .detail-pic{
+            width:50%;
+        }
+        .detail-main{
+            width:50%;
+            margin-left:60px;
+            // background-color: aqua;
+
+            h3{
+                font-size:18px;
+                margin-bottom:20px;
+            }
+            .wrapper-detail{
+                width:100%;
+                border-bottom:1px solid rgba(222,222,222,1) ;   
+                border-top:1px solid rgba(222,222,222,1) ;   
+                .wrapper-detailInfo{
+                    display:flex;
+                    justify-content: space-between;
+                    font-size:14px;
+                    line-height:1.36;
+                    
+                    &.top{
+                        margin-top:16px;
+                    }
+                    &.bottom{
+                        margin-bottom:18px;
+                    }
+
+                }
+            }
+            .description{
+                margin-top:25px;
+                font-size:14px;
+            }
+            .online-link{
+                display: inline-block;
+                margin-top:26px;
+                margin-bottom:40px;
+                border-bottom:1px solid rgba(51,51,51,1) ;      
+                font-size:14px;
+            }
+        }
+
+    }
+}
+
+footer{
+    font-size:10px;
+    line-height:1.4;
+    padding: 26px 0;
+    
+  }
+
+
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 1024px) {
+ 
+    .detail{
+        .detail-contents{
+            display:flex;
+            flex-direction: column;
+            border-bottom:0;   
+
+            .detail-pic{
+                width:100%;
+            }
+            .detail-main{
+                width:100%;
+                margin-left:0px;
+                margin-top:25px;
+                .wrapper-detail{
+                    .wrapper-detailInfo{
+                        justify-content: flex-start;
+                        
+                        .part1{
+                            width:42px;
+                            margin-right:23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
