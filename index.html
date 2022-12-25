@@ -7,71 +7,176 @@
     <meta name="description" content="自転車好きのAさんのWebサイト">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
 
     <!-- header -->
     <header class="page-header wrapper-big">
-        <h1><img class="logo" src="images/logo.svg" alt=""></h1>
+        <!-- <h1><img class="logo" src="images/logo-r.svg" alt=""></h1> -->
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        <nav class="nav">
+            <ul class="nav_menu_ul">
+                <li class="nav_menu_li"><a href="#">TOP</a></li>
+                <li class="nav_menu_li"><a href="#">ABOUT</a></li>
+                <li class="nav_menu_li"><a href="#">BLOG</a></li>
+                <li class="nav_menu_li"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+          
+          
     </header>
-    <h1></h1>
+    
     
     <!-- main -->
     <main>
-        <!-- main visual -->
-        <section class="mainvisual wrapper-big">
-            <!-- <div class="mainvisual wrapper-big"> -->
-                <img id="mainvisuala" src="images/mainvisual.jpg" alt="">
-            <!-- </div> -->
-        <section>
 
-        <!-- index -->
-        <section class="index wrapper-big">
-            <div class="index-contents wrapper-small">
-                <h2>INDEX</h2>
-                <p>1. タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                <p>2. タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                <p>3. タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                <p>4. タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                <p>5. タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-            </div>              
+        <section class="mainvisual wrapper-big">
+            <div class="mainvisual-container">
+                <img src="images/mainvisual1.jpg" alt="">
+                <p>話して学ぼう！</p>
+                <p>BBB英会話スクール</p>
+                <a href="#">無料体験はこちら</a>
+            </div>
+
         </section>
 
-        <!-- detail -->
-        <section class="detail">
-            <div class="wrapper-small">
-                <h2>DETAIL</h2>
+        <section class="reason wrapper-big"></section>
+            <h2>BBBが選ばれる理由</h2>
+            <div class="reason-container 1">
+                <img src="images/icon-pc.png" alt="">
+                <h3>オンライン対応</h3>
+                <p>24時間いつでも受講できる！</p>
             </div>
-            <div class="detail-contents wrapper-small">
-                <div class="detail-pic"><img src="images/detail.jpg" alt=""></div>
-                <div class="detail-main">
-                    <h3>タイトルタイトルタイトル</h3>
-                    
-                    <div class="wrapper-detail">
-                        <div class="wrapper-detailInfo top">
-                            <p class="part1">著者</p>                            
-                            <p class="part2">タイトルタイトルタイトル</p>                            
-                        </div>
-                        <div class="wrapper-detailInfo">
-                            <p class="part1">出版社</p>                            
-                            <p class="part2">タイトルタイトルタイトル</p>                            
-                        </div>
-                        <div class="wrapper-detailInfo bottom">
-                            <p class="part1">発行年</p>                            
-                            <p class="part2">タイトルタイトルタイトル</p>                            
-                        </div>
-                     </div>
-                                   
-                    <p class="description">テキストテキストテキストテキストテキス
-トテキスト テキストテキストテキストテ
-キストテキストテキスト</p>
+            <div class="reason-container 2">
+                <img src="images/icon-teacher.png" alt="">
+                <h3>講師はネイティブ</h3>
+                <p>お気に入りの講師が自由に選べる！</p>
+            </div>
 
-                    <p class="online-link">オンラインストアで見る</p>
+        <section class="review wrapper-small">
+            <h2>受講生の声</h2>
+            <div class="review-container 1">
+                <div class="profile-container">
+                    <img src="images/icon-student1.png" alt="">
+                    <p class="name">○○○さん</p>
+                    <p class="job">大学生</p>
                 </div>
+                <div class="description-container">
+                    <p>テキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキスト</p>
+                </div>
+            </div>
+            <div class="review-container 2">
+                <div class="profile-container">
+                    <img src="images/icon-student2.png" alt="">
+                    <p class="name">○○○さん</p>
+                    <p class="job">会社員</p>
+                </div>
+                <div class="description-container">
+                    <p>テキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキスト</p>
+                </div>
+            </div>
+            <div class="review-container 3">
+                <div class="profile-container">
+                    <img src="images/icon-student3.png" alt="">
+                    <p class="name">○○○さん</p>
+                    <p class="job">自営業</p>
+                </div>
+                <div class="description-container">
+                    <p>テキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキスト</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview wrapper-big">
+            <div class="overview-container">
+                <h2>スクールの概要</h2>
+                <div class="grid-container">
+                    <div class="lesson">
+                        <h3>レッスン内容</h3>
+                        <h4>LESSON</h4>
+                        <p>テキストテキストテキストテキスト
+                            テキストテキストテキストテキスト
+                            テキスト</p>
+                    </div>
+                    <div class="price">
+                        <h3>料金プラン</h3>
+                        <h4>PRICE</h4>
+                        <p>テキストテキストテキストテキスト
+                            テキストテキストテキストテキスト
+                            テキスト</p>
+                    </div>
+                    <div class="teacher">
+                        <h3>講師のご紹介</h3>
+                        <h4>TEACHER</h4>
+                        <p>テキストテキストテキストテキスト
+                            テキストテキストテキストテキスト
+                            テキスト</p>
+                    </div>
+                    <div class="qa">
+                        <h3>BBBのQ&A</h3>
+                        <h4>Q&A</h4>
+                        <p>テキストテキストテキストテキスト
+                            テキストテキストテキストテキスト
+                            テキスト</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trial wrapper-small">
+            <p class="part1">まずは無料で、BBBの英会話を試してみませんか？</p>
+            <p class="part2">今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！</p>
+            <a href="#">無料体験に申し込む</a>
+        </section>
+        <section class="under-menu wrapper-small">
+            <div class="course">
+                <p>コース一覧</p>
+                <ul>
+                    <li>スタンダードプラン</li>
+                    <li>プレミアムプラン</li>
+                    <li>短期集中プラン</li>
+                    <li>日常英会話コース</li>
+                    <li>ビジネス英会話コース</li>
+            </div>
+            <div class="course">
+                <p>講師紹介</p>
+                <ul>
+                    <li>講師について</li>
+                    <li>講師一覧</li>
+                    <li>講師を探す</li>
+            </div>
+            <div class="course">
+                <p>会社情報</p>
+                <ul>
+                    <li>会社概要</li>
+                    <li>採用情報</li>
+            </div>
+            <div class="course">
+                <p>BBBについて</p>
+                <ul>
+                    <li>よくあるご質問</li>
+                    <li>ご利用規約</li>
+                    <li>プライバシーポリシー</li>
+                    <li>お問い合わせ</li>
             </div>
         </section>
     </main>
@@ -81,5 +186,7 @@
         </div>
         
     </footer>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </body>
 </html>
