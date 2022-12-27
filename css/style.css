@@ -2,75 +2,275 @@
 body {
   font-family: "Meiryo";
   line-height: 1.46;
-  background: rgb(244, 249, 255);
+  background: white;
 }
 
 img {
   max-width: 100%;
 }
 
-.nav_toggle {
-  display: block;
-  position: relative;
-  width: 1.75rem;
-  height: 1.5rem;
+.wrapper-big {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.nav_toggle i {
+.content-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-header {
+  padding: 0 10px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-header h1 {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+}
+.page-header .humberger .nav_toggle {
+  background: rgb(255, 42, 42);
   display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #333;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+.page-header .humberger .nav_toggle span {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   transition: transform 0.5s, opacity 0.5s;
 }
-
-.nav_toggle i:nth-child(1) {
-  top: 0;
+.page-header .humberger .nav_toggle span:nth-child(1) {
+  top: 5px;
+  left: 5px;
 }
-
-.nav_toggle i:nth-child(2) {
-  top: 0;
-  bottom: 0;
-  margin: auto;
+.page-header .humberger .nav_toggle span:nth-child(2) {
+  top: 15px;
+  left: 5px;
 }
-
-.nav_toggle i:nth-child(3) {
-  bottom: 0;
+.page-header .humberger .nav_toggle span:nth-child(3) {
+  top: 25px;
+  left: 5px;
 }
-
-.nav_toggle.show i:nth-child(1) {
+.page-header .humberger .nav_toggle.show span:nth-child(1) {
   transform: translateY(10px) rotate(-45deg);
 }
-
-.nav_toggle.show i:nth-child(2) {
+.page-header .humberger .nav_toggle.show span:nth-child(2) {
   opacity: 0;
 }
-
-.nav_toggle.show i:nth-child(3) {
+.page-header .humberger .nav_toggle.show span:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
 }
-
-.nav {
+.page-header .humberger .nav {
+  margin-top: 50px;
   position: fixed;
   top: 3rem;
   left: 0;
-  right: 0;
-  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
+  background: #555;
 }
-
-.nav.show {
+.page-header .humberger .nav.show {
   opacity: 1;
   visibility: visible;
+}
+.page-header .humberger .nav .nav_menu_ul {
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+}
+.page-header .humberger .nav .nav_menu_ul .nav_menu_li {
+  list-style: none;
+  border-bottom: 0;
+}
+.page-header .humberger .nav .nav_menu_ul .nav_menu_li .button {
+  background-color: aliceblue;
+}
+.page-header .humberger .nav .nav_menu_ul .nav_menu_li a {
+  color: white;
+  text-decoration: none;
+}
+.page-header .humberger .nav .nav_menu_ul .nav_menu_li .btn {
+  width: 300px;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  border: 1px solid #333;
 }
 
 .mainvisual {
   text-align: center;
   padding: 0 10px;
+}
+.mainvisual .mainvisual-container {
+  position: relative;
+}
+.mainvisual .mainvisual-container .part1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 46px;
+  display: block;
+  width: 400px;
+}
+.mainvisual .mainvisual-container .part2 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 46px;
+  display: block;
+  width: 400px;
+}
+.mainvisual .mainvisual-container .button {
+  position: absolute;
+  background-color: red;
+  color: white;
+  top: 80px;
+  left: 20px;
+  display: block;
+  width: 400px;
+  font-size: 24px;
+}
+
+.reason .reason-container {
+  height: 600px;
+  background-color: red;
+  padding: 20px;
+}
+.reason .reason-container .part1 {
+  padding: 40px 70px;
+  margin-right: auto;
+  width: 50%;
+  height: 40%;
+  background-color: white;
+  display: flex;
+}
+.reason .reason-container .part1 .image {
+  width: 20%;
+  margin-right: 20px;
+}
+.reason .reason-container .part1 .desc {
+  width: 80%;
+}
+.reason .reason-container .part1 .desc h3 {
+  font-size: 28px;
+  color: red;
+}
+.reason .reason-container .part2 {
+  padding: 40px 70px;
+  margin-left: auto;
+  width: 50%;
+  height: 40%;
+  background-color: white;
+  display: flex;
+}
+.reason .reason-container .part2 .image {
+  width: 20%;
+  margin-right: 20px;
+}
+.reason .reason-container .part2 .desc {
+  width: 80%;
+}
+.reason .reason-container .part2 .desc h3 {
+  font-size: 28px;
+  width: 100%;
+  color: red;
+}
+
+.review .review-container {
+  width: 100%;
+  display: flex;
+}
+.review .review-container.left {
+  margin-right: auto;
+  flex-direction: row;
+}
+.review .review-container.right {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+.review .review-container .profile-container {
+  width: 20%;
+  margin: 0 10px;
+}
+.review .review-container .profile-container img {
+  background-color: grey;
+}
+.review .review-container .description-container {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(233, 241, 251);
+}
+
+.overview {
+  background-image: url(../images/bg.gif);
+  background-size: 50%;
+  background-repeat: repeat;
+}
+.overview .content-wrapper .overview-container {
+  width: 100%;
+  height: 900px;
+}
+.overview .content-wrapper .overview-container .grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 300px 300px;
+}
+.overview .content-wrapper .overview-container .grid-container .grid-content {
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+.overview .content-wrapper .overview-container .grid-container .grid-content p {
+  margin-top: 30px;
+}
+
+.trial {
+  text-align: center;
+}
+.trial .button {
+  background-color: red;
+  width: 100%;
+  font-size: 24px;
+}
+.trial .button a {
+  color: white;
+}
+
+.under-menu {
+  background-color: rgb(232, 232, 232);
+}
+.under-menu .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.under-menu .content-wrapper .menu-content {
+  margin-top: 20px;
+}
+.under-menu .content-wrapper .menu-content p {
+  font-size: 16px;
+}
+.under-menu .content-wrapper .menu-content li {
+  list-style: none;
+  font-size: 16px;
 }
 
 .index {
