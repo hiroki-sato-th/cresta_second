@@ -18,8 +18,11 @@
 
     <!-- header -->
     <header class="page-header wrapper-big">
-        <h1><img class="logo" src="images/logo-r.svg" alt=""></h1>
-        
+        <div class="logo first">
+            <img src="images/logo-r.svg" alt="">
+            <img src="images/logo-w.svg" alt="">
+            <!-- <p>英会話スクール</p> -->
+        </div>
         <div class="humberger">
             <span class="nav_toggle">
                 <span></span>
@@ -34,11 +37,11 @@
                     <!-- <div class="button">
                         <li class="nav_menu_li"><a href="#">無料体験に申し込む</a></li>
                     </div> -->
-                    <li class="nav_menu_li"><a class="btn" href="#">無料体験に申し込む</a></li>
+                    <!-- <li class="nav_menu_li"><a class="btn" href="#">無料体験に申し込む</a></li> -->
                 </ul>
-                <!-- <div class="button">
+                <div class="humberger-button">
                     <a href="#">無料体験に申し込む</a>
-                </div> -->
+                </div>
                 
             </nav>
         </div>
@@ -52,9 +55,15 @@
         <section class="mainvisual wrapper-big">
             <div class="mainvisual-container">
                 <img src="images/mainvisual1.jpg" alt="">
-                <span class="part1">話して学ぼう！</p>
-                <span class="part2">BBB英会話スクール</p>
-                <a class="button" href="#">無料体験はこちら</a>
+                <img src="images/mainvisual2.jpg" alt="">
+                <img src="images/mainvisual3.jpg" alt="">
+            
+            </div>
+            <div class="main-span">
+                <span>話して学ぼう！<br>BBB英会話スクール</span>
+            </div>
+            <div class="button">
+                <a href="#">無料体験はこちら</a>
             </div>
 
         </section>
@@ -62,18 +71,22 @@
         <section class="reason wrapper-big">
             <h2>BBBが選ばれる理由</h2>
             <div class="reason-container">
-                <div class="part1">
-                    <div class="image"><img src="images/icon-pc.png" alt=""></div>
-                    <div class="desc">
-                        <h3>オンライン対応</h3>
-                        <p>24時間いつでも受講できる！</p>
-                    </div>
+                <div class="reason-wrapper-part1">
+                    <div class="reason-part1 init">
+                        <div class="image"><img src="images/icon-pc.png" alt=""></div>
+                        <div class="desc">
+                            <h3>オンライン対応</h3>
+                            <p>24時間いつでも受講できる！</p>
+                        </div>
+                    </div>      
                 </div>
-                <div class="part2">
-                    <div class="image"><img src="images/icon-teacher.png" alt=""></div>
-                    <div class="desc">
-                        <h3>講師はネイティブ</h3>
-                        <p>お気に入りの講師が自由に選べる！</p>
+                <div class="reason-wrapper-part2">
+                    <div class="reason-part2 init">
+                        <div class="image"><img src="images/icon-teacher.png" alt=""></div>
+                        <div class="desc">
+                            <h3>講師はネイティブ</h3>
+                            <p>お気に入りの講師が自由に選べる！</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,39 +94,39 @@
 
         <section class="review content-wrapper">
             <h2>受講生の声</h2>
-            <div class="review-container left">
-                <div class="profile-container">
+            <div class="review-container left init">
+                <div class="profile-container-left">
                     <img src="images/icon-student1.png" alt="">
                     <p class="name">○○○さん</p>
                     <p class="job">大学生</p>
                 </div>
-                <div class="description-container">
+                <div class="description-container-left">
                     <p>テキストテキストテキストテキストテキストテキストテキス
                         トテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキス
                         トテキストテキスト</p>
                 </div>
             </div>
-            <div class="review-container right">
-                <div class="profile-container">
+            <div class="review-container right init">
+                <div class="profile-container-right">
                     <img src="images/icon-student2.png" alt="">
                     <p class="name">○○○さん</p>
                     <p class="job">会社員</p>
                 </div>
-                <div class="description-container">
+                <div class="description-container-right">
                     <p>テキストテキストテキストテキストテキストテキストテキス
                         トテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキス
                         トテキストテキスト</p>
                 </div>
             </div>
-            <div class="review-container left">
-                <div class="profile-container">
+            <div class="review-container left init">
+                <div class="profile-container-left">
                     <img src="images/icon-student3.png" alt="">
                     <p class="name">○○○さん</p>
                     <p class="job">自営業</p>
                 </div>
-                <div class="description-container">
+                <div class="description-container-left">
                     <p>テキストテキストテキストテキストテキストテキストテキス
                         トテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキス
@@ -123,9 +136,11 @@
         </section>
 
         <section class="overview wrapper-big">
+            
             <div class="content-wrapper">
+                <h2>スクールの概要</h2>
                 <div class="overview-container">
-                    <h2>スクールの概要</h2>
+                    
                     <div class="grid-container">
                         <div class="grid-content">
                             <h3>レッスン内容</h3>
@@ -161,12 +176,12 @@
         </section>
 
         <section class="trial content-wrapper">
-            <p class="part1">まずは無料で、BBBの英会話を試してみませんか？</p>
-            <p class="part2">今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！</p>
+            <p class="trial-part1">まずは無料で、BBBの英会話を試してみませんか？</p>
+            <p class="trial-part2">今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！</p>
             <div class="button" ><a href="#">無料体験に申し込む</a></div>
         </section>
 
-        <section class="under-menu wrapper-big">
+        <footer class="under-menu wrapper-big">
             <div class="content-wrapper">
                 <div class="menu-content">
                     <p>コース一覧</p>
@@ -199,15 +214,14 @@
                         <li>お問い合わせ</li>
                 </div>
             </div>
-        </section>
+            <div class="footer">
+                <p>© BBB English School</p>
+            </div>
+        </footer>
     </main>
-    <footer class="wrapper-small">
-        <div>
-            <p>© 2020 PHOTO BOOK</p>
-        </div>
-        
-    </footer>
+    
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="js/jquery.inview.min.js"></script> <!-- JSファイルは <script> タグで読み込みます -->
 </body>
 </html>
