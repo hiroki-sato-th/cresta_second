@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A's Photo Book</title>
+    <meta name="description" content="自転車好きのAさんのWebサイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="css/drawer.min.css">
+    <link href="css/style.css" rel="stylesheet">
+   
+    
+    <!-- JQuery -->
+    <!-- jquery & iScroll -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <body class="drawer drawer--left">
+         <!-- ローディング画面 -->
+        <div class="loader-bg">
+            <div class="spinner"></div>
+        </div>
+        <header role="banner" class="header">
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-brand" href="index.html">Brand</a></li>
+              <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+              <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main role="main">
+            <div class="container">
+                <ul class="accordion">
+                  <li><div class="menu">Menu01<span class="icon"></span></div>
+                   <ul class="subMenu">
+                     <li>SubMenu01</li>
+                     <li>SubMenu02</li>
+                     <li>SubMenu03</li>
+                   </ul>
+                  </li>
+                  <li><div class="menu">Menu02<span class="icon"></span></div>
+                   <ul class="subMenu">
+                     <li>SubMenu01</li>
+                     <li>SubMenu02</li>
+                     <li>SubMenu03</li>
+                   </ul>
+                  </li>
+                  <li><div class="menu">Menu03<span class="icon"></span></div>
+                   <ul class="subMenu">
+                     <li>SubMenu01</li>
+                     <li>SubMenu02</li>
+                     <li>SubMenu03</li>
+                   </ul>
+                  </li>
+                  <li><div class="menu">Menu04<span class="icon"></span></div>
+                   <ul class="subMenu">
+                     <li>SubMenu01</li>
+                     <li>SubMenu02</li>
+                     <li>SubMenu03</li>
+                   </ul>
+                  </li>
+                </ul>
+                 
+               </div>
+
+               <!-- モーダルを開くボタン -->
+            <div class="modal-open">モーダルを開く</div>
+
+            <!-- モーダル本体 -->
+            <div class="modal-container">
+                <div class="modal-body">
+                    <!-- 閉じるボタン -->
+                    <div class="modal-close">×</div>
+                    <!-- モーダル内のコンテンツ -->
+                    <div class="modal-content">
+                        <p>文章が入ります。文章が入ります。文章が入ります。<br>
+                            文章が入ります。文章が入ります。文章が入ります。<br>
+                            文章が入ります。文章が入ります。</p>
+                    </div>
+                </div>
+            </div>
+          <!-- Page content -->
+
+          <ul class="tab-area">
+            <li class="tab active">ドラゴンボール</li>
+            <li class="tab">鬼滅の刃</li>
+            <li class="tab">スパイファミリー</li>
+          </ul>
+          <div class="panel-area">
+            <div class="panel active">
+              <h2>ドラゴンボール</h2>
+              <ul>
+                <li>孫悟空</li>
+                <li>ベジータ</li>
+                <li>ピッコロ</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h2>鬼滅の刃</h2>
+              <ul>
+                <li>炭治郎</li>
+                <li>禰豆子</li>
+                <li>我妻善逸</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h2>スパイファミリー</h2>
+              <ul>
+                <li>アーニャ</li>
+                <li>ロイド</li>
+                <li>ヨル</li>
+              </ul>
+            </div>
+          </div>
+          
+        
+        </main>
+      </body>
+
+
+
+
+</body>
+</html>

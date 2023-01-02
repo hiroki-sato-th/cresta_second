@@ -11,17 +11,36 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+        <!-- JQuery -->
+    <!-- jquery & iScroll -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <script src="js/script.js"></script>
+
 </head>
 <body>
-
+    <!-- <button  class="top-button wrapper-big" ><a href="#header">TOP</a></button > -->
+    <button id="js-pagetop" class="pagetop"><span class="pagetop__arrow"></span></button>
     <!-- header -->
-    <header class="page-header wrapper-big">
+    <header class="page-header wrapper-big" id="header">
         <div class="logo first">
             <img src="images/logo-r.svg" alt="">
             <img src="images/logo-w.svg" alt="">
             <!-- <p>英会話スクール</p> -->
+        </div>
+        <div class="jquery"><a href="jquery.html">JQuery</a></div>
+        <div class="second-nav">
+            <ul class="second-nav_menu_ul">
+                <li><a href="#mainvisual">main</a></li>
+                <li><a href="#reason">reason</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#overview">overview</a></li>
+                <li><a href="#trial">trial</a></li>
+                <li><a href="#under-menu">under-menu</a></li>
+            </ul>
         </div>
         <div class="humberger">
             <span class="nav_toggle">
@@ -52,7 +71,7 @@
     <!-- main -->
     <main>
 
-        <section class="mainvisual wrapper-big">
+        <section class="mainvisual wrapper-big" id="mainvisual">
             <div class="mainvisual-container">
                 <img src="images/mainvisual1.jpg" alt="">
                 <img src="images/mainvisual2.jpg" alt="">
@@ -68,7 +87,7 @@
 
         </section>
 
-        <section class="reason wrapper-big">
+        <section class="reason wrapper-big" id="reason">
             <h2>BBBが選ばれる理由</h2>
             <div class="reason-container">
                 <div class="reason-wrapper-part1">
@@ -92,7 +111,7 @@
             </div>
         </section>
 
-        <section class="review content-wrapper">
+        <section class="review content-wrapper" id="review">
             <h2>受講生の声</h2>
             <div class="review-container left init">
                 <div class="profile-container-left">
@@ -135,7 +154,7 @@
             </div>
         </section>
 
-        <section class="overview wrapper-big">
+        <section class="overview wrapper-big" id="overview">
             
             <div class="content-wrapper">
                 <h2>スクールの概要</h2>
@@ -175,13 +194,13 @@
             </div>
         </section>
 
-        <section class="trial content-wrapper">
+        <section class="trial content-wrapper" id="trial">
             <p class="trial-part1">まずは無料で、BBBの英会話を試してみませんか？</p>
             <p class="trial-part2">今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！</p>
             <div class="button" ><a href="#">無料体験に申し込む</a></div>
         </section>
 
-        <footer class="under-menu wrapper-big">
+        <footer class="under-menu wrapper-big" id="under-menu">
             <div class="content-wrapper">
                 <div class="menu-content">
                     <p>コース一覧</p>
@@ -220,8 +239,5 @@
         </footer>
     </main>
     
-<!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="js/jquery.inview.min.js"></script> <!-- JSファイルは <script> タグで読み込みます -->
 </body>
 </html>
